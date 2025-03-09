@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = "Profesores";
+}
+
+<h2>Profesores</h2>
+
+<div>
+    <h3>Agregar Profesor</h3>
+    <form method="post" action="/Profesor/Agregar">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required><br>
+        
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" name="sexo" required><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br>
+        
+        <label for="ano_nacimiento">Año de Nacimiento:</label>
+        <input type="number" id="ano_nacimiento" name="ano_nacimiento" required><br>
+        
+        <label for="nacionalidad">Nacionalidad:</label>
+        <input type="text" id="nacionalidad" name="nacionalidad" required><br>
+        
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br>
+        
+        <label for="ano_egresado">Año de Egresado:</label>
+        <input type="number" id="ano_egresado" name="ano_egresado" required><br>
+        
+        <label for="ano_ingreso">Año de Ingreso:</label>
+        <input type="number" id="ano_ingreso" name="ano_ingreso" required><br>
+        
+        <button type="submit">Agregar Profesor</button>
+    </form>
+</div>
+
+<div>
+    <h3>Eliminar Profesor</h3>
+    <form method="post" action="/Profesor/Eliminar">
+        <label for="dni_eliminar">DNI:</label>
+        <input type="text" id="dni_eliminar" name="dni" required><br>
+        <button type="submit">Eliminar Profesor</button>
+    </form>
+</div>
+
+<div>
+    <h3>Buscar Profesor</h3>
+    <form method="get" action="/Profesor/Buscar">
+        <label for="dni_buscar">DNI:</label>
+        <input type="text" id="dni_buscar" name="dni" required><br>
+        <button type="submit">Buscar Profesor</button>
+    </form>
+</div>
+
+<div>
+    <h3>Lista de Profesores</h3>
+    <form method="get" action="/Profesor/Listar">
+        <button type="submit">Listar Profesores</button>
+    </form>
+</div>

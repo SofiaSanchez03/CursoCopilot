@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Materias";
+}
+
+<h2>Materias</h2>
+
+<div>
+    <h3>Agregar Materia</h3>
+    <form method="post" action="/Materia/Agregar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br>
+        
+        <label for="profesor">Profesor:</label>
+        <input type="text" id="profesor" name="profesor" required><br>
+        
+        <button type="submit">Agregar Materia</button>
+    </form>
+</div>
+
+<div>
+    <h3>Eliminar Materia</h3>
+    <form method="post" action="/Materia/Eliminar">
+        <label for="codigo_eliminar">Código:</label>
+        <input type="text" id="codigo_eliminar" name="codigo" required><br>
+        <button type="submit">Eliminar Materia</button>
+    </form>
+</div>
+
+<div>
+    <h3>Buscar Materia</h3>
+    <form method="get" action="/Materia/Buscar">
+        <label for="codigo_buscar">Código:</label>
+        <input type="text" id="codigo_buscar" name="codigo" required><br>
+        <button type="submit">Buscar Materia</button>
+    </form>
+</div>
+
+<div>
+    <h3>Lista de Materias</h3>
+    <form method="get" action="/Materia/Listar">
+        <button type="submit">Listar Materias</button>
+    </form>
+</div>

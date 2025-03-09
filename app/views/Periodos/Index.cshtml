@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Periodos";
+}
+
+<h2>Periodos</h2>
+
+<div>
+    <h3>Agregar Periodo</h3>
+    <form method="post" action="/Periodo/Agregar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="tiempo">Tiempo:</label>
+        <input type="text" id="tiempo" name="tiempo" required><br>
+        
+        <button type="submit">Agregar Periodo</button>
+    </form>
+</div>
+
+<div>
+    <h3>Eliminar Periodo</h3>
+    <form method="post" action="/Periodo/Eliminar">
+        <label for="nombre_eliminar">Nombre:</label>
+        <input type="text" id="nombre_eliminar" name="nombre" required><br>
+        <button type="submit">Eliminar Periodo</button>
+    </form>
+</div>
+
+<div>
+    <h3>Buscar Periodo</h3>
+    <form method="get" action="/Periodo/Buscar">
+        <label for="nombre_buscar">Nombre:</label>
+        <input type="text" id="nombre_buscar" name="nombre" required><br>
+        <button type="submit">Buscar Periodo</button>
+    </form>
+</div>
+
+<div>
+    <h3>Lista de Periodos</h3>
+    <form method="get" action="/Periodo/Listar">
+        <button type="submit">Listar Periodos</button>
+    </form>
+</div>
